@@ -6,13 +6,13 @@
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/02 21:18:34 by elise             #+#    #+#             */
-/*   Updated: 2025/09/05 16:43:46 by elise            ###   ########.fr       */
+/*   Updated: 2025/09/05 17:13:21 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf_c(va_list args)
+int	ft_print_c(va_list args)
 {
 	char	c;
 

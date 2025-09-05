@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_x.c                                       :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/03 19:29:41 by elise             #+#    #+#             */
-/*   Updated: 2025/09/05 17:53:05 by elise            ###   ########.fr       */
+/*   Created: 2025/09/05 17:52:21 by elise             #+#    #+#             */
+/*   Updated: 2025/09/05 17:52:40 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_print_x(va_list args)
+int	ft_nbrlen(unsigned int n, int base_len)
 {
-	unsigned int	n;
+	int	len;
 
-	n = va_arg(args, unsigned int);
-	ft_putnbr_base(n, 1, "0123456789abcdef");
-	return (ft_nbrlen(n, 16));
+	len = 1;
+	while (n >= (unsigned int)base_len)
+	{
+		n /= base_len;
+		len++;
+	}
+	return (len);
 }

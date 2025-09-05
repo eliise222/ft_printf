@@ -6,7 +6,7 @@
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 17:02:50 by elise             #+#    #+#             */
-/*   Updated: 2025/09/05 16:24:08 by elise            ###   ########.fr       */
+/*   Updated: 2025/09/05 17:54:47 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 void	*ft_memset(void *s, int c, size_t n);
+void	ft_putnbr_base(unsigned int n, int fd, char *base);
+int		ft_nbrlen(unsigned int n, int base_len);
 
 #endif

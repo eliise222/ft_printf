@@ -6,7 +6,7 @@
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/02 18:04:11 by elise             #+#    #+#             */
-/*   Updated: 2025/09/05 16:45:58 by elise            ###   ########.fr       */
+/*   Updated: 2025/09/05 17:22:32 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,11 @@ static int	ft_numlen(int n)
 int	ft_print_i_or_d(va_list args)
 {
 	int	n;
-
+	
 	n = va_arg(args, int);
-	ft_putnbr(n);
-	return (ft_numlen(n));
+	ft_putnbr_fd(n, 1);
+	int	len;
+
+	len = ft_numlen(n);
+	return (len);
 }

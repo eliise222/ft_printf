@@ -6,7 +6,7 @@
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 16:17:54 by elise             #+#    #+#             */
-/*   Updated: 2025/09/05 16:50:48 by elise            ###   ########.fr       */
+/*   Updated: 2025/09/05 17:13:10 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include "../libft/libft.h"
 
 int	ft_printf(const char *format, ...);
-int	ft_printf_c(va_list args);
+int	ft_print_c(va_list args);
 int	ft_print_i_or_d(va_list args);
 int	ft_print_xx(va_list args);
 int	ft_print_x(va_list args);
