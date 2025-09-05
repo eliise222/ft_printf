@@ -6,11 +6,12 @@
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 20:11:34 by elise             #+#    #+#             */
-/*   Updated: 2025/09/05 17:49:51 by elise            ###   ########.fr       */
+/*   Updated: 2025/09/06 01:39:55 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
+
 
 void	ft_putnbr_base_long(unsigned long n, int fd, char *base)
 {
@@ -42,9 +43,20 @@ int	ft_print_p(va_list args)
 	int				len;
 
 	ptr = va_arg(args, void *);
+	if (!ptr)
+	{
+		write(1, "(nil)", 5);
+		return (5);
+	}
 	a = (unsigned long) ptr;
 	write(1, "0x", 2);
 	ft_putnbr_base_long(a, 1, "0123456789abcdef");
 	len = 2 + ft_nbrlen_long(a, 16);
 	return (len);
 }
+/*#include <stdio.h>
+int main(void)
+{
+	ft_printf("Pointeur NULL : %p\n", NULL);
+	printf("Pointeur NULL : %p\n\n", NULL);
+}*/

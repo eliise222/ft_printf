@@ -6,11 +6,12 @@
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/02 21:27:20 by elise             #+#    #+#             */
-/*   Updated: 2025/09/05 16:51:02 by elise            ###   ########.fr       */
+/*   Updated: 2025/09/06 01:20:55 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
+
 
 int	ft_print_s(va_list args)
 {

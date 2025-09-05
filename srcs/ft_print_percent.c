@@ -6,11 +6,11 @@
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 22:25:56 by elise             #+#    #+#             */
-/*   Updated: 2025/09/03 22:29:14 by elise            ###   ########.fr       */
+/*   Updated: 2025/09/06 01:21:25 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 int	ft_print_percent(void)
 {

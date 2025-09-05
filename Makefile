@@ -3,14 +3,12 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 
-LIBFT_DIR = ./libft
-LIBFT = $(LIBFT_DIR)/libft.a
-INCLUDES = -Iincludes -I$(LIBFT_DIR)
+INCLUDES = -Iincludes
 
 SRC = srcs/ft_print_c.c srcs/ft_print_i_or_d.c \
 	srcs/ft_print_p.c srcs/ft_print_percent.c \
 	srcs/ft_print_s.c srcs/ft_print_u.c srcs/ft_print_x.c \
-	srcs/ft_print_xx.c srcs/ft_printf.c
+	srcs/ft_print_xx.c srcs/ft_printf.c srcs/utils.c
 
 OBJS = $(SRC:.c=.o)
 
@@ -18,15 +16,11 @@ OBJS = $(SRC:.c=.o)
 all: $(NAME)
 
 
-$(NAME): $(LIBFT) $(OBJS)
+$(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
-
-
-$(LIBFT):
-	make -C $(LIBFT_DIR)
 
 
 clean:
@@ -35,7 +29,6 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-	make fclean -C $(LIBFT_DIR)
 
 
 re: fclean all
