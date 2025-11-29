@@ -8,7 +8,7 @@ INCLUDES = -Iincludes
 SRC = srcs/ft_print_c.c srcs/ft_print_i_or_d.c \
 	srcs/ft_print_p.c srcs/ft_print_percent.c \
 	srcs/ft_print_s.c srcs/ft_print_u.c srcs/ft_print_x.c \
-	srcs/ft_print_xx.c srcs/ft_printf.c srcs/utils.c
+	srcs/ft_print_xx.c srcs/ft_printf.c srcs/utils.c srcs/ft_putchar_fd.c
 
 OBJS = $(SRC:.c=.o)
 

@@ -35,5 +35,4 @@ void	ft_putnbr_base_long(unsigned long n, int fd, char *base);
 int		ft_nbrlen_long(unsigned long n, int base_len);
 void	ft_putstr_fd(char *s, int fd);
 
-
 #endif

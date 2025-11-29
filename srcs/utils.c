@@ -37,11 +37,11 @@ int	ft_nbrlen(unsigned int n, int base_len)
 	return (len);
 }
 
-void	ft_putchar_fd(char c, int fd)
+/*void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-
+*/
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;

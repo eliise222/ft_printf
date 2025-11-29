@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elise <elise@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/25 13:12:19 by elise             #+#    #+#             */
-/*   Updated: 2025/08/28 16:39:09 by elise            ###   ########.fr       */
+/*   Created: 2025/08/27 00:32:13 by elise             #+#    #+#             */
+/*   Updated: 2025/08/28 16:39:42 by elise            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_isprint(int c)
+void	ft_putchar_fd(char c, int fd)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	else
-		return (0);
+	write(fd, &c, 1);
 }

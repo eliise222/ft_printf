@@ -37,11 +37,10 @@ static int	ft_numlen(int n)
 int	ft_print_i_or_d(va_list args)
 {
 	int	n;
-	
-	n = va_arg(args, int);
-	ft_putnbr_fd(n, 1);
 	int	len;
 
+	n = va_arg(args, int);
+	ft_putnbr_fd(n, 1);
 	len = ft_numlen(n);
 	return (len);
 }

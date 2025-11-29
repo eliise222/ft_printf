@@ -12,7 +12,6 @@
 
 #include "ft_printf.h"
 
-
 void	ft_putnbr_base_long(unsigned long n, int fd, char *base)
 {
 	int	base_len;

@@ -12,7 +12,6 @@
 
 #include "ft_printf.h"
 
-
 int	ft_print_s(va_list args)
 {
 	char	*str;
